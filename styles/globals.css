@@ -1,0 +1,12 @@
+/**
+* Local CSS Imports
+*/
+@import url("./_font.css");
+@import url("./_animation.css");
+
+/**
+* Tailwind Imports
+*/
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
