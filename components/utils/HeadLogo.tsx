@@ -26,8 +26,8 @@ const HeadLogo : React.FC<{scroller: Boolean}> = ({scroller}) => {
                     ProjectHelper.onStateChangeClassJoin(
                         'font-normal transition-all',
                         scroller 
-                        ? 'text-xs text-slate-600'
-                        : 'text-sm lg:text-base text-slate-600'
+                        ? 'text-xs hidden'
+                        : 'text-sm lg:text-base text-texter/80'
                     )
                 }>{route ? route.toUpperCase() : 'Japanese Izakaya'}</span>
             </a>

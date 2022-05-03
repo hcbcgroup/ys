@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       colors: {
         /* client theme colors custom */
+        backgrounder: '#181818',
+        backgrounderBold: '#0C0A0B',
+        highlighter: '#F4281F',
+        texter: '#F9F9F9',
       }
     },
   },

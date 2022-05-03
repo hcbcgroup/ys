@@ -32,16 +32,16 @@ const MobileNavigation: React.FC<NavigationProps> = ({ links }) => {
       {/* {mobileMenuToggle && ( */}
         <nav className={
           ProjectHelper.onStateChangeClassJoin(
-            'lg:hidden fixed z-50 w-10/12 left-0 top-0 backdrop-blur-xl bg-slate-50/100  h-screen flex flex-col justify-center items-center shadow-lg  transition-all transform translate-x-0 ',
+            'lg:hidden fixed z-50 w-10/12 left-0 top-0 backdrop-blur-xl bg-backgrounder/95  h-screen flex flex-col justify-center items-center shadow-lg  transition-all transform translate-x-0 ',
             mobileMenuToggle
-            ? 'transition-all ease-out transform translate-x-0  shadow-slate-800/30'
+            ? 'transition-all ease-out transform translate-x-0  shadow-black/60'
             : 'transition-all ease-in transform -translate-x-full shadow-transparent'
           )
         }>
           <button
             className={
               ProjectHelper.onStateChangeClassJoin(
-                'fixed z-50 right-8 top-4 text-slate-800 text-4xl transitiion-all transform focus focus:rotate-180',
+                'fixed z-50 right-8 top-4 text-texter text-4xl transitiion-all transform focus focus:rotate-180',
                 mobileMenuToggle
                 ? 'opacity-100'
                 : 'opacity-0'
@@ -53,7 +53,7 @@ const MobileNavigation: React.FC<NavigationProps> = ({ links }) => {
           >
             <MdOutlineMenu />
           </button>
-          <section className="w-full p-8 text-slate-600 flex flex-col space-y-4">
+          <section className="w-full p-8 text-texter/90 flex flex-col space-y-4">
             {links.map((link, index) => (
               <Link key={index} href={link.pageTo}>
                 <a className="font-medium text-2xl flex space-x-2 items-center">
@@ -62,13 +62,13 @@ const MobileNavigation: React.FC<NavigationProps> = ({ links }) => {
                 </a>
               </Link>
             ))}
-            <LinkToChowNow className="w-full flex space-x-2 justify-center font-bold items-center text-center px-3 py-2 text-blue-500 border-2 border-blue-500">
+            <LinkToChowNow className="w-full flex space-x-2 justify-center font-bold items-center text-center px-3 py-2 text-highlighter/75 border-2 border-highlighter/75">
               <React.Fragment>
                 <span>Order Online For Pickup</span>
                 <MdRestaurantMenu />
               </React.Fragment>
             </LinkToChowNow>
-            <Feeds className="w-full flex flex-col items-center pt-4 text-slate-900" />
+            <Feeds className="w-full flex flex-col items-center pt-4 text-texter/80" />
           </section>
         </nav>
       {/* )} */}

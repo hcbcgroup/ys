@@ -28,13 +28,13 @@ const Header: React.FC<NavigationProps> = ({ links }) => {
       ProjectHelper.onStateChangeClassJoin(
         'w-full fixed top-0 transition-all z-40',
         scroller
-        ? 'shadow-sm shadow-slate-200 backdrop-blur-sm bg-slate-50/80'
-        : 'shadow-none backdrop-blur-none bg-white/0'
+        ? 'border-slate-600 border-opacity-25 backdrop-blur-sm bg-backgrounderBold/80'
+        : 'shadow-none backdrop-blur-none bg-transparent'
       )
     }>
       <section className={
         ProjectHelper.onStateChangeClassJoin(
-          'flex justify-between items-center px-8 py-4 lg:py-2 md:px-12 lg:px-16 xl:px-20 2xl:px-24 border-b border-transparent transition-all',
+          'flex justify-between items-center px-8 py-4 md:px-12 lg:px-16 xl:px-20 2xl:px-24 border-b border-transparent transition-all',
           scroller
           ? 'lg:py-4'
           : 'border-transparent'
