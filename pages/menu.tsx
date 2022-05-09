@@ -1,8 +1,9 @@
 /* next types & interfaces */
-import { NextPage } from "next";
-import React from "react";
-import Container from "../components/utils/Container";
-import PageTitle from "../components/utils/PageTitle";
+import { NextPage } from 'next';
+import React from 'react';
+import Container from '../components/utils/Container';
+import MenuOpenerLink from '../components/utils/MenuOpenerLink';
+import PageTitle from '../components/utils/PageTitle';
 
 const Menupage: NextPage = () => {
   return (
@@ -11,11 +12,13 @@ const Menupage: NextPage = () => {
         containerClass="w-full bg-backgrounderBold/90"
         sectionClass="w-full flex flex-col justify-center items-center min-h-screen"
       >
-        <PageTitle 
-          title="Yuchan's Menu"
-          description="Sort the menu by categories now!"
-        
-        />
+        <React.Fragment>
+          <PageTitle
+            title="Yuchan's Menu"
+            description="Sort the menu by categories now!"
+          />
+          <MenuOpenerLink className="menu-opener px-8 py-3 mt-8 font-medium text-xl bg-highlighter rounded-lg transition-all hover hover:backdrop-blur-lg hover:bg-highlighter/70" />
+        </React.Fragment>
       </Container>
     </div>
   );

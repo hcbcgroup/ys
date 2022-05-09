@@ -29,3 +29,17 @@
 
     animation: 1.525s heroButtonsAnimate forwards cubic-bezier(0.455, 0.03, 0.515, 0.955)
 }
+
+@keyframes menuOpenerAnimate {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-opener {
+    opacity: 0;
+    transform: translateY(100%);
+
+    animation: 1.525s menuOpenerAnimate 1.525s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
