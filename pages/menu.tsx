@@ -8,7 +8,7 @@ import { BiFoodMenu } from 'react-icons/bi';
 const Menupage: NextPage = () => {
   return (
     <React.Fragment>
-      <PageSEO title="Gallery" />
+      <PageSEO title="Menu" />
       <HeroText>
         <>
           {' '}
