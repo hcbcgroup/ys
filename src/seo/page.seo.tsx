@@ -7,7 +7,16 @@ interface PageSEOProps {
 const PageSEO: React.FC<PageSEOProps> = ({ title }) => {
   return (
     <Head>
-      <title>Yuchan Shokudo | {title}</title>
+      <meta
+        name="description"
+        content="Yuchan Shokudo formerly Yakitori Yuchan, established 2014 in Davis, CA
+              aim to provide authentic, home-style Japanese cuisine in the form
+              of ramen and donburi to the Davis and Sacramento area."
+      />
+      <title>
+        Yuchan Shokudo |{' '}
+        {title ? title : 'Authentic & Homestyle Japanese Cuisine'}
+      </title>
     </Head>
   );
 };

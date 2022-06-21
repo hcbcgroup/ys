@@ -106,7 +106,7 @@ const Header: React.FC = () => {
           </div>
         </>
       </MobileAside>
-      <header className="w-full fixed top-0 z-40 bg-gradient-to-b  from-backgrounder to-backgrounderBold md:bg-transparent backdrop-blur-sm">
+      <header className="w-full fixed top-0 z-40 bg-gradient-to-b  from-backgrounder/95 to-backgrounderBold md:bg-transparent backdrop-blur-sm">
         <section className="flex justify-between items-center px-8 py-8 md:py-4">
           <h1
             className={reactClassname(

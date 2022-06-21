@@ -6,10 +6,10 @@ const IndexDineIn: React.FC = () => {
   return (
     <div className="w-full">
       <section className="p-8 w-full">
-        <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-4 w-full">
+        <h3 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center mb-4 w-full">
           Dine In At Yuchan,
         </h3>
-        <p className="leading-8 mb-4 text-center px-4 max-w-md mx-auto pb-4 border-b-2 w-full">
+        <p className="leading-8 text-lg md:text-xl lg:text-2xl lg:leadng-loose mb-4 text-center px-4 max-w-xl mx-auto pb-4 border-b-2 w-full">
           We aim to provide our customers authentic, home-style Japanese cuisine
           in the form of ramen and donburi to the Davis and Sacramento area.
         </p>

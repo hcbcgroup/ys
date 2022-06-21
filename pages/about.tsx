@@ -13,7 +13,7 @@ const Aboutpage: NextPage = () => {
           <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl mb-4 lg:mb-8">
             Mission Statement & Who We Are
           </h2>
-          <p className="font-normal max-w-xl mx-auto leading-8 lg:leading-9 xl:leading-10 text-center text-lg md:text-xl lg:text-2xl">
+          <p className="font-normal max-w-xl mx-auto leading-8 lg:leading-9 xl:leading-10 text-center text-xl md:text-2xl lg:text-3xl">
             <strong>Yuchan Shokudo</strong>,{' '}
             <em className="font-light">
               formerly Yakitori Yuchan, established 2014 in Davis, CA,

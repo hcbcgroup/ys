@@ -1,3 +1,4 @@
+import OrderOnline from '@components/reuse/OrderOnline';
 import reactClassname from '@lib/reactClassname';
 
 interface MobileAsideProps {
@@ -15,6 +16,16 @@ const MobileAside: React.FC<MobileAsideProps> = ({ asideOpen, children }) => {
       )}
     >
       <section className="p-8 flex flex-col justify-center">{children}</section>
+      <OrderOnline>
+        <a
+          href="https://direct.chownow.com/order/20071/locations/28924"
+          target={'_blank'}
+          className="shadow-2xl font-medium bg-highlighter px-8 py-3 text-lg lg:text-xl border border-highlighter md:hover hover:bg-red-600"
+          rel="noreferrer"
+        >
+          Order Online
+        </a>
+      </OrderOnline>
     </aside>
   );
 };

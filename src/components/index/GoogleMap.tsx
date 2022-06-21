@@ -1,7 +1,9 @@
 const GoogleMap: React.FC = () => {
   return (
     <div className="w-full h-auto flex flex-col items-center">
-      <h3 className="font-bold text-xl lg:text-2xl mb-2">Our Location</h3>
+      <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-2">
+        Our Location
+      </h3>
       <p className="mb-8 font-sans font-light">109 E Street. Davis, CA 95616</p>
       <iframe
         className="w-full h-full"

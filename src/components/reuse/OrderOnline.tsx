@@ -16,7 +16,7 @@ const OrderOnline: React.FC<OrderOnlineProps> = ({ children }) => {
     setAnimateText(true);
   }, [router]);
   return (
-    <div className="fixed bottom-8 right-8 z-50 flex items-center justify-center">
+    <div className="mt-8 flex items-center justify-center">
       <section
         className={reactClassname(
           'transition-all transform ease-out',
