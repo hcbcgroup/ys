@@ -19,7 +19,7 @@ const HeroText: React.FC<HeroTextProps> = ({ children }) => {
     <div className="min-h-screen flex flex-col justify-center items-center">
       <section
         className={reactClassname(
-          'p-8 py-28 transition-all transform ease-out',
+          'p-8 py-32 transition-all transform ease-out',
           animateText === 'initial'
             ? 'hidden'
             : animateText
