@@ -15,9 +15,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     >
       <Header />
       <OrderOnline>
-        <button className="shadow-2xl animate-bounce bg-gradient-to-r from-highlighter via-red-500 to-red-600 px-3 py-2 border border-highlighter">
+        <a
+          href="https://direct.chownow.com/order/20071/locations/28924"
+          target={'_blank'}
+          className="shadow-2xl animate-bounce bg-gradient-to-r from-highlighter via-red-500 to-red-600 px-3 py-2 border border-highlighter"
+          rel="noreferrer"
+        >
           Order Online
-        </button>
+        </a>
       </OrderOnline>
       <main className="w-full relative">{children}</main>
       <Footer />

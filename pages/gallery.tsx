@@ -20,13 +20,12 @@ const Gallerypage: NextPage = () => {
               (each, index) => (
                 <section
                   className={reactClassname(
-                    'w-full h-full flex flex-col jsutify-center md:items-center',
-                    each % 2 !== 0 ? 'items-start' : 'items-end'
+                    'w-full h-full flex flex-col jsutify-center items-center md:items-center'
                   )}
                   key={index}
                 >
                   <a
-                    className={reactClassname('w-11/12 md:w-full')}
+                    className={reactClassname('w-full')}
                     href={`/yuchanshokudo_images/${each.toString()}.jpg`}
                     target={'_blank'}
                     rel="noopener noreferrer"

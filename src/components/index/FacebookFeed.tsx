@@ -1,7 +1,7 @@
 const FacebookFeed: React.FC = () => {
   return (
     <div className="w-full md:w-max mx-auto h-auto flex flex-col items-center">
-      <h3 className="font-bold text-xl lg:text-2xl mb-8"># Facebook Feeds</h3>
+      <h3 className="font-bold text-xl lg:text-2xl mb-8">Facebook Feeds</h3>
       <iframe
         className="w-full overflow-hidden h-96"
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FYakitoriYuchan%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=912214705987872"

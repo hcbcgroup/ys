@@ -10,10 +10,8 @@ const IndexDineIn: React.FC = () => {
           Dine In At Yuchan,
         </h3>
         <p className="leading-8 mb-4 text-center px-4 max-w-md mx-auto pb-4 border-b-2 w-full">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vero
-          voluptate autem, aliquid, debitis quidem molestias optio, doloribus
-          itaque repudiandae adipisci amet ipsum deserunt dolor? Dicta labore
-          repellendus debitis harum.
+          We aim to provide our customers authentic, home-style Japanese cuisine
+          in the form of ramen and donburi to the Davis and Sacramento area.
         </p>
       </section>
       <div className="w-full h-full pb-16 grid gird-cols-1 gap-8 place-content-center place-items-center px-8">
