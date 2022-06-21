@@ -1,13 +1,18 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document';
+import { useEffect } from 'react';
 
 export default function Document() {
   return (
-    <Html lang='en'>
+    <Html lang="en">
       <Head />
-      <body className='w-full bg-backgrounderBold text-texter'>
+      <body className="w-full bg-backgrounderBold text-texter">
         <Main />
         <NextScript />
+        <noscript>
+          Enable JavaScript to ensure
+          <a href="https://userway.org">website accessibility</a>
+        </noscript>
       </body>
     </Html>
-  )
+  );
 }

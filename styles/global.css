@@ -9,6 +9,12 @@ body {
     display: none;
 }
 
+div#userwayAccessibilityIcon.uai {
+    top: 5.5rem;
+    right: 7rem;
+    transform: translateX(-3.75rem);
+}
+
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
