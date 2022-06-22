@@ -1,10 +1,17 @@
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 
 interface PageSEOProps {
   title: string;
 }
 
 const PageSEO: React.FC<PageSEOProps> = ({ title }) => {
+  const [routeTitle, setRouteTitle] = useState(
+    'Yuchan Shokudo | Authentic & Homestyle Japanese Cuisine'
+  );
+  useEffect(() => {
+    setRouteTitle(`Yuchan Shokudo | ${title}`);
+  }, []);
   return (
     <Head>
       <meta
@@ -13,10 +20,10 @@ const PageSEO: React.FC<PageSEOProps> = ({ title }) => {
               aim to provide authentic, home-style Japanese cuisine in the form
               of ramen and donburi to the Davis and Sacramento area."
       />
-      <title>
-        Yuchan Shokudo |{' '}
-        {title ? title : 'Authentic & Homestyle Japanese Cuisine'}
-      </title>
+      {!title && (
+        <title>Yuchan Shokudo | Authentic & Homestyle Japanese Cuisine</title>
+      )}
+      {title && <title>{routeTitle}</title>}
     </Head>
   );
 };

@@ -24,12 +24,9 @@ const Homepage: NextPage = () => {
               alt="Yuchan Shokudo Location Image"
             />
           </div>
-          <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl mb-2">
+          <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl pb-4">
             Authentic & Homestyle Japanese Cuisine
           </h2>
-          <p className="font-normal text-center md:text-right text-lg md:text-xl lg:text-2xl">
-            We&apos;re Yuchan Shokudo
-          </p>
           <OrderOnline>
             <a
               href="https://direct.chownow.com/order/20071/locations/28924"
