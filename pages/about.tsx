@@ -1,8 +1,10 @@
+import FAQ from '@components/about/FAQ';
 import IndexDineIn from '@components/index/IndexDineIn';
 import HeroText from '@components/reuse/HeroText';
 import PageSEO from '@seo/page.seo';
 import type { NextPage } from 'next';
 import React from 'react';
+import { VscArrowDown } from 'react-icons/vsc';
 
 const Aboutpage: NextPage = () => {
   return (
@@ -23,8 +25,18 @@ const Aboutpage: NextPage = () => {
               of ramen and donburi to the Davis and Sacramento area.
             </span>
           </p>
+          <div className="flex items-center justify-center mt-8">
+            <a
+              href="#frequently-asked-questions"
+              className="flex px-4 py-2 items-center space-x-4 border-b-2 text-gray-500 border-gray-500 transition-all hover:text-gray-200 hover:border-gray-300/70 lg:text-lg font-bold"
+            >
+              <span>Frequently Asked Questions</span>
+              <VscArrowDown className="animate-bounce" />
+            </a>
+          </div>
         </>
       </HeroText>
+      <FAQ />
     </React.Fragment>
   );
 };
