@@ -1,7 +1,19 @@
+/**
+ * libs
+ */
 import reactClassname from '@lib/reactClassname';
+/**
+ * react
+ */
 import { useState } from 'react';
+/**
+ * icons
+ */
 import { AiFillQuestionCircle } from 'react-icons/ai';
 import { MdOutlineQuestionAnswer } from 'react-icons/md';
+/**
+ * local interfaces & types
+ */
 interface QNAProps {
   question: string;
   answer: string;

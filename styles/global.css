@@ -1,5 +1,7 @@
+/* google font api */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+/* reset styles */
 html,
 body {
     font-family: 'Roboto', sans-serif
@@ -9,12 +11,14 @@ body {
     display: none;
 }
 
+/* accessibility circle container UI position change */
 div#userwayAccessibilityIcon.uai {
     top: 5.5rem;
     right: 7rem;
     transform: translateX(-4rem);
 }
 
+/* tailwind imports */
 @tailwind base;
 @tailwind utilities;
 @tailwind components;

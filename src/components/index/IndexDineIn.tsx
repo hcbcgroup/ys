@@ -1,3 +1,6 @@
+/**
+ * components
+ */
 import BusinessHours from './BusinessHours';
 import FacebookFeed from './FacebookFeed';
 import GoogleMap from './GoogleMap';

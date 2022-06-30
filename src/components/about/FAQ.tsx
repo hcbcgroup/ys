@@ -1,5 +1,10 @@
+/**
+ * components
+ */
 import QNA from './QNA';
-
+/**
+ * local interfaces & types
+ */
 interface QuestionAndAnswerData {
   question: string;
   answer: string;

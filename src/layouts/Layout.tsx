@@ -1,18 +1,26 @@
-import OrderOnline from '@components/reuse/OrderOnline';
+/**
+ * react
+ */
 import { useEffect } from 'react';
+/**
+ * components
+ */
+import OrderOnline from '@components/reuse/OrderOnline';
 import Footer from './footer.layout';
 import Header from './header.layout';
-
+/**
+ * local interfaces & types
+ */
 interface LayoutProps {
   children: JSX.Element;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  /**
-   * Web Accessibility
-   * User Way
-   */
   useEffect(() => {
+    /**
+     * Web Accessibility
+     * User Way
+     */
     (function () {
       const s = document.createElement('script');
       s.setAttribute('data-account', 'FwPGZvtcmF');

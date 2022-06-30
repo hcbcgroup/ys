@@ -1,9 +1,24 @@
+/**
+ * components
+ */
 import HeroText from '@components/reuse/HeroText';
 import OrderOnline from '@components/reuse/OrderOnline';
 import PageSEO from '@seo/page.seo';
+/**
+ * next
+ */
 import type { NextPage } from 'next';
+/**
+ * react
+ */
 import React from 'react';
+/**
+ * public assets
+ */
 import MenuFile from '../public/yuchanshokudo_menu_v1.pdf';
+/**
+ * icons
+ */
 import { BiFoodMenu } from 'react-icons/bi';
 const Menupage: NextPage = () => {
   return (

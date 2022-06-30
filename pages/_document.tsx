@@ -1,4 +1,10 @@
+/**
+ * next
+ */
 import { Html, Head, Main, NextScript } from 'next/document';
+/**
+ * react
+ */
 import { useEffect } from 'react';
 
 export default function Document() {

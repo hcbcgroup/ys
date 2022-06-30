@@ -1,17 +1,29 @@
+/**
+ * next
+ */
 import Head from 'next/head';
+/**
+ * react
+ */
 import { useEffect, useState } from 'react';
-
+/**
+ * local interfaces & types
+ */
 interface PageSEOProps {
-  title: string;
+  title?: string;
 }
 
 const PageSEO: React.FC<PageSEOProps> = ({ title }) => {
   const [routeTitle, setRouteTitle] = useState(
-    'Yuchan Shokudo | Authentic & Homestyle Japanese Cuisine'
+    'Yuchan Shokudo - Authentic & Homestyle Japanese Cuisine'
   );
   useEffect(() => {
-    setRouteTitle(`Yuchan Shokudo | ${title}`);
-  }, []);
+    setRouteTitle(
+      `Yuchan Shokudo - Authentic & Homestyle Japanese Cuisine ${
+        title ? `| ${title}` : ''
+      }`
+    );
+  }, [title]);
   return (
     <Head>
       <meta

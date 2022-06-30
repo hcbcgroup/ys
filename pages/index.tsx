@@ -1,17 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
+/**
+ * components
+ */
 import IndexDineIn from '@components/index/IndexDineIn';
 import HeroText from '@components/reuse/HeroText';
 import OrderOnline from '@components/reuse/OrderOnline';
 import PageSEO from '@seo/page.seo';
+/**
+ * next
+ */
 import type { NextPage } from 'next';
-import Image, { StaticImageData } from 'next/image';
+/**
+ * react
+ */
 import React from 'react';
-import StoreLocationImage from '../public/yuchanshokudo_location.jpg';
 
 const Homepage: NextPage = () => {
   return (
     <React.Fragment>
-      <PageSEO title="Home" />
+      <PageSEO />
       <HeroText>
         <>
           <div

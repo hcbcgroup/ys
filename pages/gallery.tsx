@@ -1,8 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+/**
+ * components
+ */
 import HeroText from '@components/reuse/HeroText';
 import reactClassname from '@lib/reactClassname';
 import PageSEO from '@seo/page.seo';
+/**
+ * next
+ */
 import type { NextPage } from 'next';
+/**
+ * react
+ */
 import React from 'react';
 
 const Gallerypage: NextPage = () => {

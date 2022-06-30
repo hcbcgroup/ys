@@ -1,35 +1,38 @@
-import reactClassname from '@lib/reactClassname';
-import Link from 'next/link';
-import React from 'react';
-import { useState } from 'react';
-import MobileAside from './mobile-aside.layout';
-import { FiArrowRight } from 'react-icons/fi';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 /**
- * @type
+ * lib
+ */
+import reactClassname from '@lib/reactClassname';
+/**
+ * next
+ */
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+/**
+ * react
+ */
+import React, { useState, useEffect } from 'react';
+/**
+ * components
+ */
+import MobileAside from './mobile-aside.layout';
+/**
+ * icons
+ */
+import { FiArrowRight } from 'react-icons/fi';
+/**
+ * local interfaces & types
  */
 type LinkType = {
   href: string;
   textContent: string;
 };
-/**
- * @type
- */
 type LinkListType = LinkType[];
-/**
- * @global
- */
+
 const LINKS: LinkListType = [
   { href: '/', textContent: 'home' },
   { href: '/menu', textContent: 'menu' },
   { href: '/gallery', textContent: 'gallery' },
   { href: '/about', textContent: 'about' },
-];
-const SOCIALLINKS: LinkListType = [
-  { href: '#', textContent: 'facebook' },
-  { href: '#', textContent: 'instagram' },
-  { href: '#', textContent: 'yelp' },
 ];
 const ORDERLINK: LinkType = {
   href: 'https://direct.chownow.com/order/20071/locations/28924',
@@ -53,15 +56,19 @@ const Header: React.FC = () => {
             <span
               onClick={() => asideOpenHandler(false)}
               className={reactClassname(
-                'absolute top-12 right-8  h-1 bg-texter transform transition-all',
-                asideOpen ? 'rotate-45 w-10' : '-rotate-180 w-0'
+                'absolute top-12 right-8  h-1 transform transition-all',
+                asideOpen
+                  ? 'rotate-45 w-10 translate-x-0 bg-texter'
+                  : 'w-0 translate-x-full bg-transparent'
               )}
             />
             <span
               onClick={() => asideOpenHandler(false)}
               className={reactClassname(
-                'absolute top-12 right-8  h-1 bg-texter transform transition-all',
-                asideOpen ? '-rotate-45 w-10' : 'rotate-180 w-0'
+                'absolute top-12 right-8  h-1 transform transition-all',
+                asideOpen
+                  ? '-rotate-45 w-10 translate-x-0 bg-texter'
+                  : 'w-0 translate-x-full bg-transparent'
               )}
             />
           </>
@@ -74,7 +81,7 @@ const Header: React.FC = () => {
                 <Link href={eachLink.href}>
                   <a
                     className={reactClassname(
-                      'capitalize font-medium flex items-center space-x-2 transition-all text-2xl',
+                      'capitalize flex items-center space-x-2 transition-all text-2xl',
                       router.pathname === eachLink.href
                         ? 'text-texter'
                         : 'text-texter/50'
@@ -92,16 +99,30 @@ const Header: React.FC = () => {
               Or visit our social media
             </h4>
             <ul className="flex flex-col space-y-2 ">
-              {SOCIALLINKS.map((eachLink, linkIndex) => (
-                <li key={linkIndex}>
-                  <a
-                    className="font-medium capitalize underline"
-                    href={eachLink.href}
-                  >
-                    {eachLink.textContent}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  className="capitalize text-blue-500"
+                  href="https://www.facebook.com/YuchanShokudo/"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  className="capitalize text-blue-500"
+                  href="https://www.instagram.com/yuchanshokudo/"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  className="capitalize text-blue-500"
+                  href="https://www.yelp.com/biz/yakitori-yuchan-davis-6"
+                >
+                  Yelp
+                </a>
+              </li>
             </ul>
           </div>
         </>

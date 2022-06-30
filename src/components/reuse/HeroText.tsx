@@ -1,6 +1,18 @@
+/**
+ * libs
+ */
 import reactClassname from '@lib/reactClassname';
+/**
+ * next
+ */
 import { useRouter } from 'next/router';
+/**
+ * react
+ */
 import { useEffect, useState } from 'react';
+/**
+ * local interfaces & types
+ */
 interface HeroTextProps {
   children: JSX.Element;
 }

@@ -1,9 +1,21 @@
+/**
+ * components
+ */
 import FAQ from '@components/about/FAQ';
 import IndexDineIn from '@components/index/IndexDineIn';
 import HeroText from '@components/reuse/HeroText';
 import PageSEO from '@seo/page.seo';
+/**
+ * next
+ */
 import type { NextPage } from 'next';
+/**
+ * react
+ */
 import React from 'react';
+/**
+ * icons
+ */
 import { VscArrowDown } from 'react-icons/vsc';
 
 const Aboutpage: NextPage = () => {
