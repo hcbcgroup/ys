@@ -18,7 +18,7 @@ const BusinessHours: React.FC = () => {
             Tue (Dinner Only)
           </h4>
           <code className="font-sans text-right md:text-lg lg:text-xl">
-            5:00 PM - 10:00 PM
+            5:00 PM - 9:00 PM
           </code>
         </article>
         <article className="grid grid-cols-2 space-x-4">
@@ -26,7 +26,7 @@ const BusinessHours: React.FC = () => {
             Wed to Sun
           </h4>
           <code className="font-sans text-right md:text-lg lg:text-xl">
-            11:30 AM - 3:00 PM & 5:00 PM - 10:00 PM
+            11:30 AM - 3:00 PM & 5:00 PM - 9:00 PM
           </code>
         </article>
       </div>
