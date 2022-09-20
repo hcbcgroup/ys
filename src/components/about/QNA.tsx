@@ -1,16 +1,16 @@
 /**
  * libs
  */
-import reactClassname from '@lib/reactClassname';
+import reactClassname from "@lib/reactClassname";
 /**
  * react
  */
-import { useState } from 'react';
+import { useState } from "react";
 /**
  * icons
  */
-import { AiFillQuestionCircle } from 'react-icons/ai';
-import { MdOutlineQuestionAnswer } from 'react-icons/md';
+import { AiFillQuestionCircle } from "react-icons/ai";
+import { MdOutlineQuestionAnswer } from "react-icons/md";
 /**
  * local interfaces & types
  */
@@ -27,15 +27,15 @@ const QNA: React.FC<QNAProps> = ({ question, answer }) => {
     <article className="w-full flex flex-col max-w-4xl mx-auto">
       <h3
         onClick={onQuestionClick}
-        className="w-full font-medium lg:text-xl flex flex-col md:flex-row space-y-2 md:space-y-0 items-start md:items-center md:space-x-2 pb-2 border-b-2 mb-2 border-gray-400/20 text-lg cursor-pointer transition-all hover hover:text-gray-400"
+        className="w-full font-medium lg:text-xl flex flex-col md:flex-row space-y-2 md:space-y-0 items-start md:items-center md:space-x-2 pb-2 border-b-2 mb-2 border-gray-400/20 text-lg cursor-pointer transition-all hover text-white/90 hover:text-sky-200/90"
       >
         <AiFillQuestionCircle />
         <span>{question}</span>
       </h3>
       <p
         className={reactClassname(
-          'transition-all transform w-full',
-          questionOpen ? 'translate-x-0 block' : 'translate-x-full hidden'
+          "transition-all transform w-full",
+          questionOpen ? "translate-x-0 block" : "translate-x-full hidden"
         )}
       >
         <span className="col-span-7 leading-8 text-gray-400">{answer}</span>

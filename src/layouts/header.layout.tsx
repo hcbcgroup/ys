@@ -1,24 +1,25 @@
 /**
  * lib
  */
-import reactClassname from '@lib/reactClassname';
+import reactClassname from "@lib/reactClassname";
 /**
  * next
  */
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Link from "next/link";
+import { useRouter } from "next/router";
 /**
  * react
  */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 /**
  * components
  */
-import MobileAside from './mobile-aside.layout';
+import MobileAside from "./mobile-aside.layout";
 /**
  * icons
  */
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight, FiFacebook, FiInstagram } from "react-icons/fi";
+import { SiYelp } from "react-icons/si";
 /**
  * local interfaces & types
  */
@@ -29,14 +30,14 @@ type LinkType = {
 type LinkListType = LinkType[];
 
 const LINKS: LinkListType = [
-  { href: '/', textContent: 'home' },
-  { href: '/menu', textContent: 'menu' },
-  { href: '/gallery', textContent: 'gallery' },
-  { href: '/about', textContent: 'about' },
+  { href: "/", textContent: "home" },
+  { href: "/menu", textContent: "menu" },
+  { href: "/gallery", textContent: "gallery" },
+  { href: "/about", textContent: "about" },
 ];
 const ORDERLINK: LinkType = {
-  href: 'https://direct.chownow.com/order/20071/locations/28924',
-  textContent: 'order online',
+  href: "https://direct.chownow.com/order/20071/locations/28924",
+  textContent: "order online",
 };
 
 const Header: React.FC = () => {
@@ -56,19 +57,19 @@ const Header: React.FC = () => {
             <span
               onClick={() => asideOpenHandler(false)}
               className={reactClassname(
-                'absolute top-12 right-8  h-1 transform transition-all',
+                "absolute top-12 right-8  h-1 transform transition-all",
                 asideOpen
-                  ? 'rotate-45 w-10 translate-x-0 bg-texter'
-                  : 'w-0 translate-x-full bg-transparent'
+                  ? "rotate-45 w-10 translate-x-0 bg-texter"
+                  : "w-0 translate-x-full bg-transparent"
               )}
             />
             <span
               onClick={() => asideOpenHandler(false)}
               className={reactClassname(
-                'absolute top-12 right-8  h-1 transform transition-all',
+                "absolute top-12 right-8  h-1 transform transition-all",
                 asideOpen
-                  ? '-rotate-45 w-10 translate-x-0 bg-texter'
-                  : 'w-0 translate-x-full bg-transparent'
+                  ? "-rotate-45 w-10 translate-x-0 bg-texter"
+                  : "w-0 translate-x-full bg-transparent"
               )}
             />
           </>
@@ -81,10 +82,10 @@ const Header: React.FC = () => {
                 <Link href={eachLink.href}>
                   <a
                     className={reactClassname(
-                      'capitalize flex items-center space-x-2 transition-all text-2xl',
+                      "capitalize flex items-center space-x-2 transition-all text-lg",
                       router.pathname === eachLink.href
-                        ? 'text-texter'
-                        : 'text-texter/50'
+                        ? "text-texter"
+                        : "text-texter/50"
                     )}
                   >
                     <span>{eachLink.textContent}</span>
@@ -96,31 +97,34 @@ const Header: React.FC = () => {
           </ul>
           <div className="border-t-2 mt-6 pt-4">
             <h4 className="font-normal text-xl mb-4">
-              Or visit our social media
+              Connect With Yuchan Shokudo!
             </h4>
-            <ul className="flex flex-col space-y-2 ">
+            <ul className="flex flex-col space-y-2">
               <li>
                 <a
-                  className="capitalize text-blue-500"
+                  className="inline-flex items-center space-x-2 capitalize text-blue-500"
                   href="https://www.facebook.com/YuchanShokudo/"
                 >
-                  Facebook
+                  <FiFacebook className="text-xl" />
+                  <span>Facebook</span>
                 </a>
               </li>
               <li>
                 <a
-                  className="capitalize text-blue-500"
+                  className="inline-flex items-center space-x-2 capitalize text-pink-500"
                   href="https://www.instagram.com/yuchanshokudo/"
                 >
-                  Instagram
+                  <FiInstagram className="text-xl" />
+                  <span>Instagram</span>
                 </a>
               </li>
               <li>
                 <a
-                  className="capitalize text-blue-500"
+                  className="inline-flex items-center space-x-2 capitalize text-red-500"
                   href="https://www.yelp.com/biz/yakitori-yuchan-davis-6"
                 >
-                  Yelp
+                  <SiYelp className="text-xl" />
+                  <span>Yelp</span>
                 </a>
               </li>
             </ul>
@@ -131,7 +135,7 @@ const Header: React.FC = () => {
         <section className="flex justify-between items-center px-8 py-8 md:py-4">
           <h1
             className={reactClassname(
-              'flex flex-col items-center justify-center transition-all hover hover:text-white/50'
+              "flex flex-col items-center justify-center transition-all hover hover:text-white/50"
             )}
           >
             <Link href="/">
@@ -141,8 +145,8 @@ const Header: React.FC = () => {
           <nav
             data-nav_for="mobile"
             className={reactClassname(
-              'flex items-center transition-all md:hidden',
-              asideOpen ? 'space-x-0' : 'space-x-4'
+              "flex items-center transition-all md:hidden",
+              asideOpen ? "space-x-0" : "space-x-4"
             )}
           >
             <Link href="/menu">
@@ -154,20 +158,20 @@ const Header: React.FC = () => {
             >
               <span
                 className={reactClassname(
-                  'h-1 bg-texter transition-all',
-                  asideOpen ? 'w-0' : 'w-8'
+                  "h-1 bg-texter transition-all",
+                  asideOpen ? "w-0" : "w-8"
                 )}
               />
               <span
                 className={reactClassname(
-                  'h-1 bg-texter transition-all',
-                  asideOpen ? 'w-0' : 'w-8'
+                  "h-1 bg-texter transition-all",
+                  asideOpen ? "w-0" : "w-8"
                 )}
-              />{' '}
+              />{" "}
               <span
                 className={reactClassname(
-                  'h-1 bg-texter transition-all',
-                  asideOpen ? 'w-0' : 'w-8'
+                  "h-1 bg-texter transition-all",
+                  asideOpen ? "w-0" : "w-8"
                 )}
               />
             </button>
@@ -180,10 +184,10 @@ const Header: React.FC = () => {
               <Link key={linkIndex} href={eachLink.href}>
                 <a
                   className={reactClassname(
-                    'capitalize transition-all',
+                    "capitalize transition-all",
                     router.pathname === eachLink.href
-                      ? 'text-texter'
-                      : 'text-texter/50'
+                      ? "text-texter"
+                      : "text-texter/50"
                   )}
                 >
                   {eachLink.textContent}

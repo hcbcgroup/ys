@@ -2,7 +2,7 @@
  * components
  */
 import HeroText from "@components/reuse/HeroText";
-import OrderOnline from "@components/reuse/OrderOnline";
+// import OrderOnline from "@components/reuse/OrderOnline";
 import PageSEO from "@seo/page.seo";
 /**
  * next
@@ -15,7 +15,7 @@ import React from "react";
 /**
  * public assets
  */
-import MenuFile from "../public/yuchanshokudo_menu_v2.pdf";
+import MenuFile from "../public/yuchanshokudo_menu_v3.pdf";
 /**
  * icons
  */
