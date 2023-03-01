@@ -23,7 +23,10 @@ import { BiFoodMenu } from "react-icons/bi";
 const Menupage: NextPage = () => {
   return (
     <React.Fragment>
-      <PageSEO title="Menu" />
+      <PageSEO
+        title="Menu"
+        description="Explore Yuchan Shokudo's menu items on Donburi, Ramen, and beverages."
+      />
       <HeroText>
         <>
           {" "}

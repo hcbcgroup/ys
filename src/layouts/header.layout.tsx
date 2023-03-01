@@ -18,8 +18,8 @@ import MobileAside from "./mobile-aside.layout";
 /**
  * icons
  */
-import { FiArrowRight, FiFacebook, FiInstagram } from "react-icons/fi";
-import { SiYelp } from "react-icons/si";
+import { FiArrowRight } from "react-icons/fi";
+import { SiYelp, SiFacebook, SiInstagram } from "react-icons/si";
 /**
  * local interfaces & types
  */
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
             <span
               onClick={() => asideOpenHandler(false)}
               className={reactClassname(
-                "absolute top-12 right-8  h-1 transform transition-all",
+                "absolute top-8 right-4  h-1 transform transition-all",
                 asideOpen
                   ? "rotate-45 w-10 translate-x-0 bg-texter"
                   : "w-0 translate-x-full bg-transparent"
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
             <span
               onClick={() => asideOpenHandler(false)}
               className={reactClassname(
-                "absolute top-12 right-8  h-1 transform transition-all",
+                "absolute top-8 right-4  h-1 transform transition-all",
                 asideOpen
                   ? "-rotate-45 w-10 translate-x-0 bg-texter"
                   : "w-0 translate-x-full bg-transparent"
@@ -82,45 +82,45 @@ const Header: React.FC = () => {
                 <Link href={eachLink.href}>
                   <a
                     className={reactClassname(
-                      "capitalize flex items-center space-x-2 transition-all text-lg",
+                      "capitalize flex items-center gap-x-4 transition-all text-lg",
                       router.pathname === eachLink.href
                         ? "text-texter"
                         : "text-texter/50"
                     )}
                   >
-                    <span>{eachLink.textContent}</span>
                     <FiArrowRight />
+                    <span>{eachLink.textContent}</span>
                   </a>
                 </Link>
               </li>
             ))}
           </ul>
           <div className="border-t-2 mt-6 pt-4">
-            <h4 className="font-normal text-xl mb-4">
+            <h4 className="font-medium text-lg sm:text-xl mb-4">
               Connect With Yuchan Shokudo!
             </h4>
             <ul className="flex flex-col space-y-2">
               <li>
                 <a
-                  className="inline-flex items-center space-x-2 capitalize text-blue-500"
+                  className="inline-flex items-center gap-x-4 capitalize transition-all duration-[0.35s] border-l-0 pl-0 hover:border-l-8 hover:pl-4"
                   href="https://www.facebook.com/YuchanShokudo/"
                 >
-                  <FiFacebook className="text-xl" />
+                  <SiFacebook className="text-xl" />
                   <span>Facebook</span>
                 </a>
               </li>
               <li>
                 <a
-                  className="inline-flex items-center space-x-2 capitalize text-pink-500"
+                  className="inline-flex items-center gap-x-4 capitalize transition-all duration-[0.35s] border-l-0 pl-0 hover:border-l-8 hover:pl-4"
                   href="https://www.instagram.com/yuchanshokudo/"
                 >
-                  <FiInstagram className="text-xl" />
+                  <SiInstagram className="text-xl" />
                   <span>Instagram</span>
                 </a>
               </li>
               <li>
                 <a
-                  className="inline-flex items-center space-x-2 capitalize text-red-500"
+                  className="inline-flex items-center gap-x-4 capitalize transition-all duration-[0.35s] border-l-0 pl-0 hover:border-l-8 hover:pl-4"
                   href="https://www.yelp.com/biz/yakitori-yuchan-davis-6"
                 >
                   <SiYelp className="text-xl" />
@@ -132,7 +132,7 @@ const Header: React.FC = () => {
         </>
       </MobileAside>
       <header className="w-full fixed top-0 z-40 bg-gradient-to-b  from-backgrounder/95 to-backgrounderBold md:bg-transparent backdrop-blur-sm">
-        <section className="flex justify-between items-center px-8 py-8 md:py-4">
+        <section className="flex justify-between items-center px-4 lg:px-8 py-4 md:py-4">
           <h1
             className={reactClassname(
               "flex flex-col items-center justify-center transition-all hover hover:text-white/50"

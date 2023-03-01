@@ -1,17 +1,19 @@
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full border-t border-backgrounder">
-      <section className="p-8 flex flex-col items-center justify-center">
-        <p className="font-medium text-lg lg:text-xl mb-2">
+    <footer className="w-full border-t border-backgrounder bg-neutral-900">
+      <section className="py-12 px-4 lg:px-8 flex flex-col items-center justify-center">
+        <h3 className="font-medium text-xl lg:text-2xl mb-1">
           Yuchan Shokudo, Davis
-        </p>
-        <code className="block font-thin text-center w-full font-sans text-light">
-          &copy; 2022 by Yuchan. Created By{' '}
+        </h3>
+        <code className="flex flex-col gap-y-3 items-center font-light text-center w-full font-sans text-light">
+          <span className="italic text-sm text-slate-300">
+            &copy; 2023 All Rights Reserved.
+          </span>
           <a
-            className=" text-slate-200 font-medium transition-all hover hover:text-blue-400"
-            href="https://haneulab.com"
+            className=" text-slate-300 text-sm transition-all hover hover:text-blue-400"
+            href="https://haneulchoi.studio/developer"
           >
-            HaneuLab
+            Created By Haneul Choi Studio
           </a>
         </code>
       </section>

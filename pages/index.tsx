@@ -2,18 +2,18 @@
 /**
  * components
  */
-import IndexDineIn from '@components/index/IndexDineIn';
-import HeroText from '@components/reuse/HeroText';
-import OrderOnline from '@components/reuse/OrderOnline';
-import PageSEO from '@seo/page.seo';
+import IndexDineIn from "@components/index/IndexDineIn";
+import HeroText from "@components/reuse/HeroText";
+import OrderOnline from "@components/reuse/OrderOnline";
+import PageSEO from "@seo/page.seo";
 /**
  * next
  */
-import type { NextPage } from 'next';
+import type { NextPage } from "next";
 /**
  * react
  */
-import React from 'react';
+import React from "react";
 
 const Homepage: NextPage = () => {
   return (
@@ -37,7 +37,7 @@ const Homepage: NextPage = () => {
           <OrderOnline>
             <a
               href="https://direct.chownow.com/order/20071/locations/28924"
-              target={'_blank'}
+              target={"_blank"}
               className="shadow-2xl font-medium bg-red-700 px-8 py-3 text-lg lg:text-xl border border-red-700 md:hover hover:bg-red-600"
               rel="noreferrer"
             >

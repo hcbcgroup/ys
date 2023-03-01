@@ -2,25 +2,28 @@
 /**
  * components
  */
-import HeroText from '@components/reuse/HeroText';
-import reactClassname from '@lib/reactClassname';
-import PageSEO from '@seo/page.seo';
+import HeroText from "@components/reuse/HeroText";
+import reactClassname from "@lib/reactClassname";
+import PageSEO from "@seo/page.seo";
 /**
  * next
  */
-import type { NextPage } from 'next';
+import type { NextPage } from "next";
 /**
  * react
  */
-import React from 'react';
+import React from "react";
 
 const Gallerypage: NextPage = () => {
   return (
     <React.Fragment>
-      <PageSEO title="Gallery" />
+      <PageSEO
+        title="Gallery"
+        description="Explore images and description of some of our popular menus."
+      />
       <HeroText>
         <>
-          {' '}
+          {" "}
           <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl mb-8 lg:mb-12">
             Gallery Of Yuchan Shokudo
           </h2>
@@ -29,20 +32,20 @@ const Gallerypage: NextPage = () => {
               (each, index) => (
                 <section
                   className={reactClassname(
-                    'w-full h-full flex flex-col jsutify-center items-center md:items-center'
+                    "w-full h-full flex flex-col jsutify-center items-center md:items-center"
                   )}
                   key={index}
                 >
                   <a
-                    className={reactClassname('w-full')}
-                    href={`/yuchanshokudo_images/${each.toString()}.jpg`}
-                    target={'_blank'}
+                    className={reactClassname("w-full")}
+                    href={`/gallery/${each.toString()}.jpg`}
+                    target={"_blank"}
                     rel="noopener noreferrer"
                   >
-                    {' '}
+                    {" "}
                     <img
-                      className={reactClassname('w-full')}
-                      src={`/yuchanshokudo_images/${each.toString()}.jpg`}
+                      className={reactClassname("w-full")}
+                      src={`/gallery/${each.toString()}.jpg`}
                       alt={`yuchanshokudo gallery image ${index}`}
                     />
                   </a>
