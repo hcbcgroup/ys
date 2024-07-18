@@ -15,7 +15,7 @@ import React from "react";
 /**
  * public assets
  */
-import MenuFile from "../public/yuchanshokudo_menu_v3.pdf";
+import MenuFile from "../public/yuchanshokudo_menu_v4.pdf";
 /**
  * icons
  */

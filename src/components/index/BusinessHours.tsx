@@ -7,28 +7,31 @@ const BusinessHours: React.FC = () => {
       <div className="flex flex-col space-y-2 text-sm md:text-base lg:text-lg">
         <article className="grid grid-cols-2 space-x-2">
           <h4 className="font-medium font-sans w-max md:text-lg lg:text-xl">
-            Mon
+            Mon to Thur (Dinner Only)
           </h4>
           <code className="font-sans text-right md:text-lg lg:text-xl">
-            Closed
+          5:00 PM - 10:00 PM
           </code>
         </article>
         <article className="grid grid-cols-2 space-x-4">
           <h4 className="font-medium font-sans w-max md:text-lg lg:text-xl">
-            Tue to Sun (Lunch)
+            Fri to Sat (All Day)
           </h4>
           <code className="font-sans text-right md:text-lg lg:text-xl">
-            11:30 AM - 3:00 PM
+            12:00 PM - 11:00 PM
           </code>
         </article>
         <article className="grid grid-cols-2 space-x-4">
           <h4 className="font-medium font-sans w-max md:text-lg lg:text-xl">
-            Tue to Sun (Dinner)
+            Sun (All Day)
           </h4>
           <code className="font-sans text-right md:text-lg lg:text-xl">
-            5:00 PM - 9:00 PM
+            12:00 PM - 10:00 PM
           </code>
         </article>
+        <p className="pt-2 lg:pt-3 leading-[1.67] font-light text-neutral-200">
+        <span className="text-red-500">*</span><span className="font-bold text-white">NOTE</span> that Hours are subject to change without notice. Please visit our <a href="https://facebook.com/YuchanShokudo" target="_blank" rel="no-referrer noreferrer">Facebook</a> page for up-to-date information.
+        </p>
       </div>
     </div>
   );

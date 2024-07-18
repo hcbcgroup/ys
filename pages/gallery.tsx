@@ -28,6 +28,32 @@ const Gallerypage: NextPage = () => {
             Gallery Of Yuchan Shokudo
           </h2>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* {[1, 2, 3].map(
+              (each, index) => (
+                <section
+                  className={reactClassname(
+                    "w-full h-full flex flex-col jsutify-center items-center md:items-center"
+                  )}
+                  key={index}
+                >
+                  <a
+                    className={reactClassname("w-full")}
+                    href={`/gallery/pdf/${each.toString()}.jpg`}
+                    
+                    target={"_blank"}
+                    rel="noopener noreferrer"
+                  
+                  >
+                    {" "}
+                    <img
+                      className={reactClassname("w-full")}
+                      src={`/gallery/pdf/${each.toString()}.jpg`}
+                      alt={`yuchanshokudo gallery pdf ${index}`}
+                    />
+                  </a>
+                </section>
+              )
+            )} */}
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map(
               (each, index) => (
                 <section
@@ -38,7 +64,7 @@ const Gallerypage: NextPage = () => {
                 >
                   <a
                     className={reactClassname("w-full")}
-                    href={`/gallery/${each.toString()}.jpg`}
+                    href={`/gallery/img/${each.toString()}.jpg`}
                     
                     target={"_blank"}
                     rel="noopener noreferrer"
@@ -47,7 +73,7 @@ const Gallerypage: NextPage = () => {
                     {" "}
                     <img
                       className={reactClassname("w-full")}
-                      src={`/gallery/${each.toString()}.jpg`}
+                      src={`/gallery/img/${each.toString()}.jpg`}
                       alt={`yuchanshokudo gallery image ${index}`}
                     />
                   </a>
