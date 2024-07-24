@@ -28,7 +28,7 @@ const Gallerypage: NextPage = () => {
             Gallery Of Yuchan Shokudo
           </h2>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* {[1, 2, 3].map(
+          {[1, 2, 3].map(
               (each, index) => (
                 <section
                   className={reactClassname(
@@ -53,7 +53,7 @@ const Gallerypage: NextPage = () => {
                   </a>
                 </section>
               )
-            )} */}
+            )}
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map(
               (each, index) => (
                 <section

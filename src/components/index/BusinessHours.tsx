@@ -30,7 +30,7 @@ const BusinessHours: React.FC = () => {
           </code>
         </article>
         <p className="pt-2 lg:pt-3 leading-[1.67] font-light text-neutral-200">
-        <span className="text-red-500">*</span><span className="font-bold text-white">NOTE</span> that Hours are subject to change without notice. Please visit our <a href="https://facebook.com/YuchanShokudo" target="_blank" rel="no-referrer noreferrer">Facebook</a> page for up-to-date information.
+        <span className="text-red-500">*</span><span className="font-bold text-white">NOTE</span>: Hours are subject to change without notice. Please visit our <a href="https://facebook.com/YuchanShokudo" target="_blank" rel="no-referrer noreferrer">Facebook</a> page for up-to-date information.
         </p>
       </div>
     </div>
