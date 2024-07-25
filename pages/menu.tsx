@@ -33,7 +33,7 @@ const Menupage: NextPage = () => {
           <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl mb-8">
             Yuchan Shokudo Menu
           </h2>
-          <code className="block font-sans w-max mx-auto text-center">
+          <p className="block font-sans w-max mx-auto text-center mb-5">
             <a
               href={MenuFile}
               target="_blank"
@@ -43,7 +43,15 @@ const Menupage: NextPage = () => {
               <BiFoodMenu className="text-xl" />
               <span>Open Full Menu</span>
             </a>
-          </code>
+          </p>
+          <p className="block font-sans mx-auto text-center text-sm lg:text-base">
+            <span>
+            Updated food menu is under revision 
+            </span>{" "}
+            <span className="inline-block">
+            -- coming soon!
+            </span>
+            </p>
         </>
       </HeroText>
     </React.Fragment>

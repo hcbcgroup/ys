@@ -4,7 +4,8 @@
 /* reset styles */
 html,
 body {
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -14,8 +15,9 @@ body {
 /* accessibility circle container UI position change */
 div#userwayAccessibilityIcon.uai {
     top: 5.5rem;
-    right: 7rem;
-    transform: translateX(-4rem);
+    right: 0rem;
+    transform: translateX(0rem);
+
 }
 
 /* tailwind imports */

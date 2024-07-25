@@ -57,7 +57,7 @@ const Header: React.FC = () => {
             <span
               onClick={() => asideOpenHandler(false)}
               className={reactClassname(
-                "absolute top-8 right-4  h-1 transform transition-all",
+                "fixed top-8 right-4 z-50 h-1 transform transition-all",
                 asideOpen
                   ? "rotate-45 w-10 translate-x-0 bg-texter"
                   : "w-0 translate-x-full bg-transparent"
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
             <span
               onClick={() => asideOpenHandler(false)}
               className={reactClassname(
-                "absolute top-8 right-4  h-1 transform transition-all",
+                "fixed top-8 right-4 z-50  h-1 transform transition-all",
                 asideOpen
                   ? "-rotate-45 w-10 translate-x-0 bg-texter"
                   : "w-0 translate-x-full bg-transparent"
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
             </Link>
             <button
               onClick={() => asideOpenHandler(true)}
-              className="flex flex-col items-center space-y-2"
+              className="flex flex-col items-center space-y-2 relaitve z-50"
             >
               <span
                 className={reactClassname(
