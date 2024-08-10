@@ -31,7 +31,7 @@ const Menupage: NextPage = () => {
           </h2>
           <p className="block font-sans w-max mx-auto text-center">
             <a
-              href={"/yuchanshokudo_menu_v6.pdf"}
+              href={"/yuchanshokudo_menu_v7.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="border-highlighter border-b-2 text-highlighter px-4 pb-3 text-lg font-bold flex items-center space-x-2 transition-all hover hover:text-texter hover:border-texter"
