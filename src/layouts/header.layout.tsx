@@ -145,7 +145,7 @@ const Header: React.FC = () => {
           <nav
             data-nav_for="mobile"
             className={reactClassname(
-              "flex items-center transition-all md:hidden",
+              "flex items-center transition-all md:hidden z-50",
               asideOpen ? "space-x-0" : "space-x-4"
             )}
           >
@@ -184,7 +184,7 @@ const Header: React.FC = () => {
               <Link key={linkIndex} href={eachLink.href}>
                 <a
                   className={reactClassname(
-                    "capitalize transition-all",
+                    "capitalize transition-all relative z-50",
                     router.pathname === eachLink.href
                       ? "text-texter"
                       : "text-texter/50"

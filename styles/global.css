@@ -20,6 +20,13 @@ div#userwayAccessibilityIcon.uai {
 
 }
 
+div.userway_buttons_wrapper {
+    position: absolute;
+    top: 0;
+    translate: 500%;
+    background-color: white
+}
+
 /* tailwind imports */
 @tailwind base;
 @tailwind utilities;
