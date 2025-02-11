@@ -31,10 +31,9 @@ const Menupage: NextPage = () => {
           </h2>
           <p className="block font-sans w-max mx-auto text-center">
             <a
-              href={"/yuchanshokudo_menu_v10.pdf"}
+              href={"https://qrs.ly/m2cxcxs"}
               target="_blank"
-              rel="noopener noreferrer"
-              className="border-highlighter border-b-2 text-highlighter px-4 pb-3 text-lg font-bold flex items-center space-x-2 transition-all hover hover:text-texter hover:border-texter"
+              className="border-highlighter border-b-2 text-highlighter px-4 pb-3 text-lg font-bold flex items-center space-x-2 transition-all hover hover:text-texter hover:border-texter" rel="noreferrer"
             >
               <BiFoodMenu className="text-xl" />
               <span>Open Full Menu</span>
