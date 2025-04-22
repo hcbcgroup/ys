@@ -7,13 +7,13 @@ const Footer: React.FC = () => {
         </h3>
         <code className="flex flex-col gap-y-3 items-center font-light text-center w-full font-sans text-light">
           <span className="italic text-sm text-slate-300">
-            &copy; 2023 All Rights Reserved.
+            &copy; 2025 All Rights Reserved.
           </span>
           <a
-            className=" text-slate-300 text-sm transition-all hover hover:text-blue-400"
-            href="https://haneulchoi.studio/developer"
+            className=" text-sm transition-all hover text-blue-500 lg:hover:text-blue-500/50"
+            href="https://hcbcgroup.com"
           >
-            Created By Haneul Choi Studio
+            Created By HCBC GROUP
           </a>
         </code>
       </section>
