@@ -46,10 +46,9 @@ const Gallerypage: NextPage = () => {
             <h3 className="font-semibold tracking-[0.025rem] uppercase text-2xl lg:text-5xl mb-5 lg:mb-8 2xl:mb-12">Regular Items</h3>
           <section id="regularitems" className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {menu['regular items'].map((each, idx) => (
-                <a key={idx} target="_blank" href={`/gallery/image/regular/${each}.jpg`} rel="noreferrer">
 
-                      <img src={`/gallery/image/regular/${each}.jpg`} alt="" />
-                    </a>
+<MenuImage key={idx} imagePath={['gallery', 'image', 'regular']} imageName={each} />
+              
             ))}
           </section>
           </div>
