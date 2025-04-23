@@ -2,6 +2,7 @@
 /**
  * components
  */
+import MenuImage from "@components/gallery/MenuImage";
 import HeroText from "@components/reuse/HeroText";
 import PageSEO from "@seo/page.seo";
 /**
@@ -19,7 +20,7 @@ const Gallerypage: NextPage = () => {
     "special": {
       "appetizers & dessert": ['kurobuta_roast_pork_katsu_appetizer', 'spicy_gyoza_salad', 'berry_kanten'],
       "dish": {
-        "noodle": ["pork_yakisoba", 'beef_gyuuniku_udon', 'vegetable_soba_salad'],
+        "noodle": ["pork_yakisoba", 'beef_gyuuniku_udon','hiyashi_chuuka' ,'vegetable_soba_salad'],
         "rice": ['double_spicy_tuna_donburi', 'tuna_poke_donburi', 'teriyaki_steak_donburi', 'kurobuta_curry', 'pork_kurobuta_roast_katsu_teishoku', 'spicy_pirikara_pork_butashogayaki_teishoku', 'pork_butashogayaki_teishoku']
       }
     }  
@@ -56,27 +57,18 @@ const Gallerypage: NextPage = () => {
             <h3 className="font-semibold tracking-[0.025rem] uppercase text-2xl lg:text-5xl mb-5 lg:mb-8 2xl:mb-12">Special Appetizers & Dessert</h3>
           <section id="regularitems" className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {menu['special']['appetizers & dessert'].map((each, idx) => (
-                <a key={idx} target="_blank" href={`/gallery/image/special/appetizers&dessert/${each}.jpg`} rel="noreferrer">
-
-                      <img src={`/gallery/image/special/appetizers&dessert/${each}.jpg`} alt="" />
-                    </a>
+               <MenuImage key={idx} imagePath={['gallery', 'image', 'special', 'appetizers&dessert']} imageName={each} />
             ))}
           </section>
           </div>
           <div >
-            <h3 className="font-semibold tracking-[0.025rem] uppercase text-2xl lg:text-5xl mb-5 lg:mb-8 2xl:mb-12">Special Dish</h3>
+            <h3 className="font-semibold tracking-[0.025rem] uppercase text-2xl lg:text-5xl mb-5 lg:mb-8 2xl:mb-12">Special Dishes</h3>
           <section id="regularitems" className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {menu['special']['dish']['noodle'].map((each, idx) => (
-                <a key={idx} target="_blank" href={`/gallery/image/special/dish/noodle/${each}.jpg`} rel="noreferrer">
-
-                      <img src={`/gallery/image/special/dish/noodle/${each}.jpg`} alt="" />
-                    </a>
+              <MenuImage key={idx} imagePath={['gallery', 'image', 'special', 'dishes', 'noodle']} imageName={each} />
             ))}
              {menu['special']['dish']['rice'].map((each, idx) => (
-                <a key={idx} target="_blank" href={`/gallery/image/special/dish/rice/${each}.jpg`} rel="noreferrer">
-
-                      <img src={`/gallery/image/special/dish/rice/${each}.jpg`} alt="" />
-                    </a>
+                   <MenuImage key={idx} imagePath={['gallery', 'image', 'special', 'dishes', 'rice']} imageName={each} />
             ))}
           </section>
           </div>
