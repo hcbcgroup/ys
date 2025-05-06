@@ -9,12 +9,14 @@ const Footer: React.FC = () => {
           <span className="italic text-sm text-slate-300">
             &copy; 2025 All Rights Reserved.
           </span>
-          <a
-            className=" text-sm transition-all hover text-blue-500 lg:hover:text-blue-500/50"
-            href="https://hcbcgroup.com"
+          <div
+        
+ 
           >
-            Created By HCBC GROUP
-          </a>
+             <span className="inline-block text-gray-500">produced by</span> <a className=" text-sm transition-all hover text-blue-500 lg:hover:text-blue-500/50"  href="https://hnbcodesign.com">
+             H&B Codesign
+             </a> <span className="inline-block text-gray-500">with love</span>
+          </div>
         </code>
       </section>
     </footer>
